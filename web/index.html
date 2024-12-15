@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="kfupmeval">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>kfupmeval</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBphVyozIZ_4b_zwwIW6HCnnGjk12Nl0kM",
+  authDomain: "kfupmeval.firebaseapp.com",
+  databaseURL: "https://kfupmeval-default-rtdb.firebaseio.com",
+  projectId: "kfupmeval",
+  storageBucket: "kfupmeval.firebasestorage.app",
+  messagingSenderId: "799318154278",
+  appId: "1:799318154278:web:14610e05fda75f9bac1ae7",
+  measurementId: "G-JYF87DBJ9V"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+  <div id="recaptcha-container"></div>
+</body>
+</html>
