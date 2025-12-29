@@ -1,10 +1,14 @@
 # KFUPMEval
+A Flutter app for crowd-sourced instructor feedback powered by Firebase Phone Auth and Realtime Database.
 
-A Flutter web app for crowd-sourced instructor feedback powered by Firebase Phone Auth and Realtime Database.
+![LoginDemo screenshot](assets/LoginDemo.png)
+![VerfiyDemo screenshot](assets/VerfiyDemo.png)
+![SearchDemo screenshot](assets/SearchDemo.png)
+![AddDemo screenshot](assets/AddDemo.png)
 
 ## Features
 - Phone-number login (Firebase Phone Auth with +966 format) and OTP verification.
-- Persisted login phone number (SharedPreferences) to scope edits to the user’s own feedback.
+- Persisted login phone number (SharedPreferences) to scope edits to the userâ€™s own feedback.
 - Browse instructors with search and aggregated averages across four categories.
 - View per-instructor details and comments.
 - Add new instructor feedback (ratings + optional comment).
@@ -17,12 +21,12 @@ A Flutter web app for crowd-sourced instructor feedback powered by Firebase Phon
 - Material UI components
 
 ## App Structure (key files)
-- lib/main.dart — Initializes Firebase and boots the app.
-- lib/login_page.dart / lib/otp_page.dart — Phone login + OTP flow; saves phone to SharedPreferences.
-- lib/home_page.dart — Lists instructors, search, navigation shell.
-- lib/instructor_details_page.dart — Ratings breakdown and comments list.
-- lib/add_instructor_page.dart — Submit new instructor feedback.
-- lib/edit_instructor_page.dart, lib/EditInstructorDetailsPage.dart, lib/EditFeedbackPage.dart — Manage feedback you submitted.
+- lib/main.dart â€” Initializes Firebase and boots the app.
+- lib/login_page.dart / lib/otp_page.dart â€” Phone login + OTP flow; saves phone to SharedPreferences.
+- lib/home_page.dart â€” Lists instructors, search, navigation shell.
+- lib/instructor_details_page.dart â€” Ratings breakdown and comments list.
+- lib/add_instructor_page.dart â€” Submit new instructor feedback.
+- lib/edit_instructor_page.dart, lib/EditInstructorDetailsPage.dart, lib/EditFeedbackPage.dart â€” Manage feedback you submitted.
 
 ### Realtime Database shape
 ```
@@ -79,7 +83,7 @@ Adjust to your privacy needs.
 ```bash
 flutter run -d chrome
 ```
-- If Chrome isn’t detected:
+- If Chrome isnâ€™t detected:
 ```bash
 flutter run -d web-server --web-hostname localhost --web-port 8080
 # then open the printed URL in your browser
