@@ -2,7 +2,7 @@
 A Flutter app for crowd-sourced instructor feedback powered by Firebase Phone Auth and Realtime Database.
 
 ![LoginDemo screenshot](assets/LoginDemo.png)
-![VerfiyDemo screenshot](assets/VerfiyDemo.png)
+![VerfiyDemo screenshot](assets/VerifyDemo.png)
 ![SearchDemo screenshot](assets/SearchDemo.png)
 ![AddDemo screenshot](assets/AddDemo.png)
 
