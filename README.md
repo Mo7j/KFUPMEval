@@ -1,14 +1,14 @@
 # KFUPMEval
 A Flutter app for crowd-sourced instructor feedback powered by Firebase Phone Auth and Realtime Database.
 
-Row(
-  children: [
-    Expanded(child: Image.asset('assets/LoginDemo.png', fit: BoxFit.contain)),
-    Expanded(child: Image.asset('assets/VerifyDemo.png', fit: BoxFit.contain)),
-    Expanded(child: Image.asset('assets/SearchDemo.png', fit: BoxFit.contain)),
-    Expanded(child: Image.asset('assets/AddDemo.png', fit: BoxFit.contain)),
-  ],
-)
+<table>
+  <tr>
+    <td><img src="assets/LoginDemo.png" width="180"/></td>
+    <td><img src="assets/VerifyDemo.png" width="180"/></td>
+    <td><img src="assets/SearchDemo.png" width="180"/></td>
+    <td><img src="assets/AddDemo.png" width="180"/></td>
+  </tr>
+</table>
 
 ## Features
 - Phone-number login (Firebase Phone Auth with +966 format) and OTP verification.
