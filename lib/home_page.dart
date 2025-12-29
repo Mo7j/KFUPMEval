@@ -80,23 +80,21 @@ class _HomePageState extends State<HomePage> {
           List<String> comments = [];
 
           for (var feedback in feedbacks) {
-            if (feedback is Map) {
-              // Safely parse values
-              double attendeesFlexibility =
-                  _parseDouble(feedback['attendees_flexibility']);
-              double voiceVolumeAccent =
-                  _parseDouble(feedback['voice_volume_accent']);
-              double teachingSkills = _parseDouble(feedback['teaching_skills']);
-              double exams = _parseDouble(feedback['exams']);
+            // Safely parse values
+            double attendeesFlexibility =
+                _parseDouble(feedback['attendees_flexibility']);
+            double voiceVolumeAccent =
+                _parseDouble(feedback['voice_volume_accent']);
+            double teachingSkills = _parseDouble(feedback['teaching_skills']);
+            double exams = _parseDouble(feedback['exams']);
 
-              sumAttendeesFlexibility += attendeesFlexibility;
-              sumVoiceVolumeAccent += voiceVolumeAccent;
-              sumTeachingSkills += teachingSkills;
-              sumExams += exams;
+            sumAttendeesFlexibility += attendeesFlexibility;
+            sumVoiceVolumeAccent += voiceVolumeAccent;
+            sumTeachingSkills += teachingSkills;
+            sumExams += exams;
 
-              comments.add(feedback['comment']?.toString() ?? '');
-            }
-          }
+            comments.add(feedback['comment']?.toString() ?? '');
+                    }
 
           double avgAttendeesFlexibility =
               feedbackCount > 0 ? sumAttendeesFlexibility / feedbackCount : 0.0;
